@@ -33,7 +33,7 @@ void mergeSort1(int A[], int left, int right) {
 
 //非递归版
 void mergeSort2(int A[], int n) {
-    for (int step = 2; step/2 <= n; step += 2) {
+    for (int step = 2; step/2 <= n; step *= 2) {
         for (int i = 1; i <= n; i += step) {
             int mid = i + step/2 - 1;
             merge(A, i, mid, mid+1, min(i+step-1, n));

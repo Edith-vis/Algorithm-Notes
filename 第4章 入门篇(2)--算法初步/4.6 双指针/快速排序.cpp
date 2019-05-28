@@ -5,7 +5,7 @@
 using namespace std;
 
 int partition(int A[], int left, int right) {
-    int p = round(1.0*rand()/RAND_MAX*(right-left)+left);
+    //int p = round(1.0*rand()/RAND_MAX*(right-left)+left);
     int temp = A[left];
     int i = left, j = right;
     while (i < j) {
