@@ -22,8 +22,9 @@ void updateHeight(node * root) {
     root->height = max(getHeight(root->left), getHeight(root->right))+1;
 }
 
+//平衡因子
 int getBalanceFactor(node * root) {
-    return getHeight(root->left) - getHeight(root->right);
+    return getHeight(root->left) - getHeight(root->right);//左减右
 }
 
 //插入操作！！！
